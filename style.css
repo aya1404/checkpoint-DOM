@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gotu", sans-serif;
+  background: #ffd862;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+/* div menu */
+.menu {
+  display: flex;
+  position: relative;
+  background: #fff;
+  cursor: pointer;
+  height: 80vh;
+}
+.menu__link {
+  display: flex;
+  padding: 1.35rem;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+.menu__link__shape {
+  width: 140%;
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin: 0 0 1rem -15%;
+}
+.menu__open {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  word-break: break-all;
+}
+.body-clone {
+  max-width: 60rem;
+  background: #ffd862;
+  max-height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  background-size: cover;
+  background-position: 13rem;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 600 600'%3E%3Cg transform='translate(300,300)'%3E%3Cpath d='M171.3,-205.3C215.2,-167.2,239.6,-106.9,247.9,-45.8C256.2,15.3,248.5,77.2,216.3,117.5C184.2,157.8,127.7,176.6,70.6,200.1C13.5,223.6,-44.2,251.8,-80.6,233.4C-117,215,-132.1,150,-124.8,101.6C-117.5,53.3,-87.8,21.5,-74.8,-6.5C-61.9,-34.4,-65.6,-58.6,-56,-102.7C-46.3,-146.8,-23.1,-210.9,20.2,-235C63.6,-259.2,127.3,-243.3,171.3,-205.3Z' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* div boxx  */
+.box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+}
+.deletebtn{
+  margin: 10px;
+  cursor: pointer;
+}
+.likebtn{
+  margin: 10px 10px 10px 0;
+  cursor: pointer;
+}
+h1{
+  padding: 10px;
+  width: 370px;
+}
+.price{
+  margin: 20px;
+  font-size: 30px;
+}
+.box input{
+  width: 50px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 255px 15px 205px 35px/35px 225px 35px 255px;
+  text-align: Center;
+  background-color: #ffd862;
+}
+.plusbtn,
+.minusbtn {
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  margin: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.box img{
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+#totalprice{
+  font-size: 40px;
+  font-weight: bold;
+}
